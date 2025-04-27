@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Pulsticker
 
-# Register your models here.
+class PulstickerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'created_at')
